@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --maroon: black;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 40px;
+            --maroon: yellow;
+            background-color: var(--maroon);
+            width: 320px;
+            height: 300px;
+            display: inline-block;
+            /* display: flex; */
+            text-align: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 250px;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            --maroon: rgb(215, 13, 13);
+            background-color: var(--maroon);
+
+        }
+
+        .box {
+            padding: 20px;
+        }
+
+        .box h2 {
+            margin-bottom: 20px;
+        }
+
+        p {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Inside container</h1>
+        <div class="img">
+          
+        </div>
+    </div>
+<pre>1 local veriable hota ha 
+    or 1 global veriable
+
+   local veriable her elemant ma istimal kr skty hain 
+   or global veriable (:root) ko istimal kr k multiple elements ko dy skty hain 
+</pre>
+</body>
+
+</html>
