@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS card design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: rgb(17, 5, 5); */
+            background-color: maroon;
+        }
+
+        .boxes {
+            /* border: 2px solid red; */
+            display: flexbox;
+            flex-direction: column;
+
+            width: 900px;
+            height: 500px;
+        }
+
+        .box1 {
+            width: 230px;
+            height: 370px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 110px;
+            margin-left: 100px;
+            border-radius: 10px;
+        }
+
+        .box2 {
+            width: 250px;
+            height: 350px;
+            background-color: aqua;
+            display: inline-block;
+            margin-top: 100px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 300px;
+            background-color: aqua;
+            display: inline-block;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        .box1 img {
+            width: 230px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .day {
+            text-align: center;
+            padding-top: 15px;
+            color: rgb(191, 35, 186);
+            font-size: small;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .lorem1 {
+            text-align: center;
+            padding: 20px 15px;
+            font-size: small;
+            color: gray;
+        }
+
+        .read {
+            background-color: #e50998;
+            /* border: 2px solid black; */
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 27px;;
+            font-weight: 900;
+            font-size: large;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .read span {
+            /* border: 2px solid black; */
+            font-size: 21px;
+
+
+        }
+
+        .views span {
+            /* border: 2px solid black; */
+            margin-left: 40px;
+            /* padding: 10px; */
+            text-align: center;
+            display: inline;
+
+        }
+        .capsoule span{
+            border: 2px solid white;         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box1">
+            <div><img src="img7.jpg" alt=""></div>
+            <div class="day">
+                4 days ago
+            </div>
+            <h2>Post one</h2>
+            <div class="lorem1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem, temporibus recusandae reiciendis ?
+            </div>
+            <div class="read">
+                <span>4m</span>
+                <div class="views">
+                    <span>5123</span>
+                    <span>32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
