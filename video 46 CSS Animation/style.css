@@ -1,0 +1,60 @@
+.container{
+    background-color: teal;
+    height: 80vh;
+    width: 30vw;
+}
+
+.box{
+    width: 34px;
+    height: 45px;
+    background-color: maroon;
+
+    /* animation-name: haseeb;
+
+    animation-duration: 2s;
+
+    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease-in-out;
+
+    animation-delay: 1s;
+
+    animation-direction: reverse; */
+
+    /* animation-play-state: paused; */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: haseeb, haseeb2 3s ease-in-out 2s 1 reverse forwards;
+}
+
+@keyframes haseeb {
+    from{
+        background-color: red;
+    }
+    
+    to{
+        transform: translateX(500px);
+        background-color: yellow;
+
+    }
+}
+
+@keyframes haseeb2 {
+    0%{
+        transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(200deg);
+    }
+    50%{
+        transform: rotate(220deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+
+}

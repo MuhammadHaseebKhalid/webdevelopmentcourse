@@ -1,0 +1,31 @@
+.box{
+width: 300px;
+height: 300px;
+border: 2px solid black;
+background-color: red;
+
+/* transition-property: all;
+transition-duration: 3s;
+transition-timing-function: linear; */
+
+/* transition-timing-function: ease;
+transition-timing-function: ease-in;
+transition-timing-function: ease-out;
+transition-timing-function: ease-in-out ;
+
+transition-delay: 0.5s; */
+
+/* shorthand notation */
+/* sb sy pehly property phir duration phir delay phir timing function */
+
+transition: all 3s 1s ease-in-out;
+
+
+}
+
+.box:hover{
+    width:500px;
+    height: 500px;
+    margin-left: 100px;
+    background-color: yellow;
+}

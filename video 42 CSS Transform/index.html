@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: rgb(222, 222, 195);
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(45deg);
+            transform: rotatey(45deg);
+            transform: rotatez(45deg); */
+            /* transform: scalex(2);
+            transform: scaley(2);
+            transform: scaleZ(2); */
+            /* transform: skew(34deg);
+            transform: skewy(34deg); */
+            /* transform: translate(35%); */
+            /* multiple properities bhi lga skty hain */
+            transform: translate(90%) skewX(35deg) translateY(45%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">box</div>
+</div>
+</body>
+</html>

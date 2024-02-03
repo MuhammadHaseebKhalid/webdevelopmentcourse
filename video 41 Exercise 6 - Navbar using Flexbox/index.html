@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Navbar using Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            /* border: 2px solid red; */
+            border-radius: 60px;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 80px;
+            top: 30px;
+        }
+
+        h2 {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 180px;
+            top: 50px;
+            font-size: 40px;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: end;
+            margin-top: 30px;
+
+        }
+
+        .box {
+            /* border: 2px solid red; */
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            font-size: 25px;
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .heading {
+            height: 200px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+
+        }
+
+        h1 {
+            margin-top: 100px;
+        }
+
+        .para {
+            /* border: 2px solid red; */
+            width: 1100px;
+            text-align: center;
+            font-size: 35px;
+            position: absolute;
+            left: 120px;
+            margin-top: 40px;
+        }
+
+        .button{
+            /* border: 5px solid red; */
+            position: absolute;
+            bottom: 100px;
+            left: 500px;
+            width: 380px;
+            height: 70px;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 25px;
+            background-color: rgb(34, 160, 251);
+            
+
+        }
+        button{
+            font-size: 20px;
+            border: none;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<div class="logo">
+    <img width="80" src="img1.jpg" alt="">
+</div>
+<div>
+    <h2> UltraEdit </h2>
+</div>
+
+<div class="container">
+    <div class="box">Products </div>
+    <div class="box">Pricing</div>
+    <div class="box">Resources</div>
+    <div class="box">About us</div>
+</div>
+<div class="heading">
+    <h1>Download UltraEdit for Windows</h1>
+</div>
+<div class="para">
+    <p>
+        Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+        editor.
+    </p>
+</div>
+<div class="button">
+    <button>DOWNLOAD MAC OR LINUX VERSION</button>
+</div>
+</body>
+
+</html>

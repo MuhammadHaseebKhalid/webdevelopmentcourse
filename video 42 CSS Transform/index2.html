@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: maroon;
+        }
+
+        .box{
+            border: 2px solid yellow;
+            width: 300px;
+            height: 300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: black;
+            background-color: yellow;
+
+            transition: all 3s linear 0.50s;
+        }
+    .container{
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+        .box:hover{
+            /* transform: rotate(180deg);
+            transform: rotate(-180deg); */
+
+            /* transform: scale(1);
+            transform: scalex(2);
+            transform: scaley(2);
+            transform: scaley(0.5); */
+
+             transform: skew(4445deg);
+            /*transform: skew(-45deg); */
+
+            /* transform: translatex(500px);
+            transform: translatex(-500px);
+            transform: translatey(500px);
+            transform: translatey(-500px); */
+
+            /* transform: translate(-500px, -500px);
+             transform: translate(500px, 500px);
+            transform: translate(-500px, 500px);
+            transform: translate(500px, -500px); */
+
+
+        }
+
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">    <div class="box">
+        <p>CSS Transforms</p>
+    </div>
+</div>
+
+</body>
+</html>

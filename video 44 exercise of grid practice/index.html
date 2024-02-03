@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: teal; */
+        }
+
+        nav img {
+            width: 120px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        ul li {
+            list-style: none;
+            /* border: 2px solid red; */
+            margin: 20px;
+            font-size: 12px;
+            font-weight: 400;
+
+        }
+
+        ul {
+            /* border: 2px solid black; */
+            display: flex;
+            position: absolute;
+            top: 0px;
+            left: 400px;
+        }
+
+        ul li:hover {
+            background-color: rgb(36, 148, 16);
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        @media screen and (max-width: 400px) {
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        .logo2 {
+            /* border: 2px solid red; */
+            margin-top: 80px;
+            display: flex;
+        }
+
+        .logo2 img {
+            /* border: 2px solid red; */
+            width: 100px;
+            margin-left: 60px;
+            padding-top: 20px;
+        }
+
+        .text {
+            padding-top: 30px;
+        }
+
+        .text span {
+            font-size: 10px;
+        }
+
+        .container {
+            /* border: 5px solid maroon; */
+            width: 800px;
+            height: 530px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* gap: 20px; */
+            padding-left: 60px;
+            position: absolute;
+            left: 50px;
+            row-gap: 20px;
+            column-gap: 0px;
+
+        }
+
+        .box {
+            /* border: 1px solid black; */
+            width: 200px;
+            height: 100px;
+            background-color: #f9f9f9;
+
+
+        }
+
+
+        /* @media ax-width:400px){
+            .container{
+                background-color: teal;
+                flex-direction: column;
+            }
+        } */
+
+        .box a {
+            color: white;
+        }
+
+        button {
+            border-radius: 2px;
+            height: 20px;
+        }
+
+
+        .box1 div {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .first {
+            text-decoration: none;
+        }
+
+        .button1 {
+            border: none;
+            margin-top: 30px;
+            background-color: #00b6d1;
+            ;
+
+        }
+
+        .remain1 {
+            background-color: #5cb85c;
+        }
+
+        .text5 {
+            border: 2px solid black;
+            position: absolute;
+            top: 20px;
+           left: 133px;
+           font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="logo.jpg" alt="">
+        <ul>
+            <li><a href="#">Products
+                    <svg width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a></li>
+            <li><a href="#">Pricing
+                    <svg width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a></li>
+            <li><a href="#">Resources
+                    <svg width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a></li>
+            <li><a href="#">About us
+                    <svg width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- <a href=" https://bit.ly/UltraEdit-CWH">UltraEdit-CWH</a> -->
+
+    <div class="logo2">
+        <img src="logo2.jpg" alt="">
+        <div class="text"> Download UltraEdit <span>v2023.2(released 12/15/2023) | Hotfix</span>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="box box1">
+            <div>English</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                    64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>Deutsch</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>Italiano</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>Español</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>français</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>Português brasileiro</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>日本</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>한국어</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>中国</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+        <div class="box box1">
+            <div>中國</div>
+            <button class="button1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download 32-bit</a></button>
+            <button class="button1 button remain1"><a class="first" href="https://bit.ly/UltraEdit-CWH">Download
+                64-bit</a></button>
+        </div>
+
+</body>
+
+</html>
