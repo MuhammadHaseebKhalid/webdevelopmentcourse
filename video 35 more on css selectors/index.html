@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            background-color: black;
+        } */
+        /* .boxes * {
+            color: blue;
+            border: 2px solid black; */
+        /* } */
+        /* grouping of delectors */
+     /* a, p, .box,   [data-color="primary"]{
+            margin-top:40px;
+            padding: 30px; */
+        /* } */
+        /* .box:nth-child(even){} */
+            /* .box:nth-child(odd){
+            background-color: maroon;
+        } */
+        /* .box:nth-last-child(1){
+            background-color: aqua;
+        } */
+         .boxes::before{
+            content: "i am before created by CSS";
+            /* color: purple; */
+        }
+        .boxes::after{
+            content: "i am after created by CSS";
+            /* color: red; */
+        } 
+        ::selection{
+            color: aqua;
+            background-color: maroon;
+        }
+        .boxes::first-letter{
+            color: purple;
+            background-color: maroon;
+            font-size: 100px;
+        }
+        input::placeholder{
+            color: maroon;
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am first box</div>
+        <div class="box">i am second box</div>
+        <div class="box">i am third box</div>
+    </div>
+    <input type="text" placeholder="text your name here">
+</body>
+
+</html>

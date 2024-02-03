@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 Design the Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+
+        }
+
+        h1 {
+            text-align: center;
+            /* border: 2px solid black; */
+            padding: 10px;
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+
+        }
+
+        nav h1 {
+            font-size: 25px;
+        }
+        
+        
+        nav {
+            position: sticky;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            /* border: 2px solid red; */
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            padding: 10px;
+            background-color: yellow;
+        }
+
+        .box2 {
+            /* border: 2px solid yellow; */
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            padding: 10px;
+            background-color: red;
+        }
+
+        .textbox {
+            /* border: 2px solid aqua; */
+            border-radius: 20px;
+            height: 60px;
+            width: 700px;
+            background-color: purple;
+            margin-top: 20px;
+
+        }
+
+        button {
+            margin-left: 1000px;
+            position: fixed;
+            border: none;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            /* border: 2px solid black; */
+            width: 700px;
+            height: 100px;
+            margin-top: 60px;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+        <nav>
+            <h1>Exercise 5 design the Layout</h1>
+        </nav>
+        <section>
+            <div class="boxes">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
+        </section>
+        <article>
+            <div class="textbox"></div>
+        </article>
+        <button>
+            <img width="50" src="logo.jpg" alt="">
+        </button>
+      
+    </header>
+    <footer>
+        <div class="footer">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

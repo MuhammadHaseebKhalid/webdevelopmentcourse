@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queiry</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        @media screen and (max-width: 300px) {
+            body {
+                background-color: maroon;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            h1 {
+                border: 10px solid yellow;
+            }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* border: 5px solid green; */
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .box:hover {
+            background-color: aqua;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .boxes::after {
+            content: 'read more';
+        }
+
+        .boxes::before {
+            content: 'read more';
+        }
+
+        .boxes:active {
+            background-color: maroon;
+        }
+
+        /* div:empty {
+            display: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Media Queiry</h1>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
