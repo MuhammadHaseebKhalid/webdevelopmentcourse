@@ -1,0 +1,13 @@
+.box {
+    border: 2px solid blue;
+    padding: 34px;
+    box-shadow: inset 3px 5px green;
+    text-align: center;
+}
+h1 {
+    border: 3px solid blue;
+    outline-style:dotted ;
+    outline-width: 10px;
+    /* outline-color: blue; */
+text-shadow: 10px 20px 3px #FF0000, 0 0 5px #0000FF;
+}
