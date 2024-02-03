@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Properity</title>
+    <style>
+        body {
+            font-family: tahoma;
+            background-color: maroon;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        div {
+            border: 1px solid black;
+
+        }
+
+        .image2 {
+            /* position: relative;
+            top: 250px;
+            left: 200px; */
+            position: absolute;
+            top: 50px;
+        }
+
+        .image1 {
+            position: sticky;
+            top: 200px;
+        }
+
+        .image4 {
+            position: fixed;
+        }
+
+        .container {
+            position: relative;
+            /* height: 8000px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="image1" width="200px" height="200px" src="IMG.1.PNG" alt="img 1">
+        <img class="image2" width="200px" height="200px" src="IMG.2.PNG" alt="img 2">
+        <img class="image3" width="200px" height="200px" src="IMG.3.PNG" alt="img 3">
+        <img class="image4" width="200px" height="200px" src="IMG.4.PNG" alt="img 4">
+    </div>
+    <p>
+        <h1>Static position</h1>
+        Static position left right top bottom  ma kuch bhi istimal nhi kr skty na z index 
+    </p>
+    <p>
+    <h1>Relative Position </h1>
+    Relative position ka jb bhi istimal krty hain to us ka jo gap hota ha wo baaqi hi rehta ha
+    </p>
+    <p>
+    <h1>Abbsolte Position </h1>
+    </p>
+    Abbsolte position ka jb bhiistimal krty hain to us ka gap baaqi nahi rehta
+    <p>
+    <h1>Fixed position</h1>
+    Fixed position sy contant hamesha apni jagha py hi rehta ha chaahy height ya width jitni mrzi barha do
+    </p>
+    <P>
+        <h1>Position sticky</h1>
+       sticky position bhi fix hi rehti ha position fixed ki tarha lekin us waqt tak jb tak us kaa parent show ho raha ha jb parent ki height or width khatm ho gi tb sticky position bhi khatm ho jyyy gi 
+    </P>
+</body>
+
+</html>
