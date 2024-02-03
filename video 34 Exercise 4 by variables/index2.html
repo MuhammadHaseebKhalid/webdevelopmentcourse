@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --background-color: #3498db ;
+            --color: white;
+            --hover: rgb(231, 61, 90);
+        }
+        body{
+            /* background-color: var(--color); */
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            color: var(--color);
+            padding: 10px;
+            margin: 0px;
+            /* background-color: var(--background-color); */
+            background-color: #3498db;
+            height: 155px;
+        }
+        h1{
+            padding-top:  35px;
+            padding-left: 10px;
+        }
+         button{
+            width: 120px;
+            margin-top: 25px;
+            margin-left: 15px;
+            padding: 10px 18px;
+            
+            /* background-color: var(--hover); */
+            background-color: #e74c3c;
+            color: var(--color);
+            border: none;
+        }
+        .button:hover {
+            background-color: aqua;
+        }
+        .content{
+            margin-top: 40px ;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Multicolor Website
+        </h1>
+        <button class="button">
+            Change Color
+        </button>
+    </header>
+    <p class="content">
+        This is a multicolor website that uses CSS variables to change colors
+    </p>
+</body>
+
+</html>
