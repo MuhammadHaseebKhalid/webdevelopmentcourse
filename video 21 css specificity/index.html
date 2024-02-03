@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* the specificity of this selector 1 */
+        /* h1 { */
+        /* color: aqua; */
+
+        /* the specificity of this selector 10 */
+        /* #gray { */
+        /* color: gray; */
+        }
+
+        /* } */
+
+        /* the specificity of this selector 10 */
+        /* h1.cred { */
+            /* color: yellow !important; */
+        }
+
+        /* the specificity of this selector 10 */
+        /* .cpurple { */
+        /* color: purple; */
+        /* } */
+
+        /* the specificity of this selector 10 */
+        /* .cred { */
+        /* color: red; */
+        /* . */
+        /* } */
+        /* the specificity of this selector 10 */
+        /* attribute selector */
+        /* [data-x="a"]{ */
+        /* background-color: red; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: aqua;" id="gray" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+    <div>
+        <!-- sb sy zyzda specific important atribute hota ha
+        us k baad inline style tag us k baad id selector us k baad class selector us k baad or atribute selector us k baad universal selector    -->
+    </div>
+    <!-- <div>
+        important ki specificity 10000,
+        inline style ki specificity 1000,
+        id selector ki specificity 100,
+        class selector ki specificity 10,
+        attribute selector ki specificity 10, 
+        pseudo selectpr ki specificity 10,
+        element selector ki specificity 1,
+        universal selector ki specificity 0,
+    </div> -->
+</body>
+
+</html>
