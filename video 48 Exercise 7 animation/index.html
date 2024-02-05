@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enemation exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: tomato;
+            border: 5px solid black;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 70px;
+            position: relative;
+            top: 30%;
+            left: 40%;
+            animation: circle 10s ease-in-out 0s infinite alternate-reverse;
+        }
+
+        @keyframes circle {
+            0%{
+                top: 10%;
+                left: 5%;
+                bottom: 10%;
+            }
+            25%{
+                top: 30%;
+                left: 20%;
+                bottom: 30%;
+            }
+            50%{
+                top: 60%;
+                left: 50%;
+                bottom: 60%;
+            }
+            75%{
+                top: 80%;
+                left: 70%;
+                bottom: 80%;
+            }
+            100%{
+                top: 100%;
+                left: 90%;
+                bottom: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
