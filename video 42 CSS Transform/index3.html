@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transforms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            
+            background-color: rgb(106, 158, 182);
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+
+        }
+
+        .item{
+            padding:2rem;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            border: 2px solid black;
+            transition: all 2s ;
+        }
+
+        #rotatex:hover{
+            transform: rotateX(90deg);
+            transform: rotateX(-90deg);
+            }
+            #rotatey:hover{
+            transform: rotatey(90deg);
+            transform: rotatey(-90deg);
+            }
+
+            #rotatez:hover{
+            transform: rotatez(90deg);
+            transform: rotatez(-90deg);
+            }
+
+            #translatex:hover{
+                transform: translatex(150px);
+                transform: translatex(-150px);
+            }
+
+            #translatey:hover{
+                transform: translatey(150px);
+                transform: translatey(-150px);
+            }
+
+           #translatez:hover{
+            transform: perspective(300px) translatez(-150px);
+            transform: perspective(200px) translatez(150px);
+           }
+
+          #scalex:hover{
+            transform: scaleX(2);
+            transform: scaleX(-2);
+          }
+         
+
+          #scaley:hover{
+            transform: scaley(2);
+            transform: scaley(-2);
+          }
+
+          #scalez:hover{
+            transform: perspective(300px) scaleZ(5) rotatex(30deg);
+            transform: perspective(300px) scaleZ(5) rotatex(-30deg);
+            transform: perspective(300px) scaleZ(5) rotatey(30deg);
+            transform: perspective(300px) scaleZ(5) rotatey(-30deg);
+        }
+
+        /* #scaley:hover{
+            transform: skewX(45deg);
+            transform: skewy(45deg);
+        } */
+            
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="rotatex">Rotatex</div>
+        <div class="item" id="rotatey">Rotatey</div>
+        <div class="item" id="rotatez">Rotatez</div>
+        <div class="item" id="translatex">Translatex</div>
+        <div class="item" id="translatey">Translatey</div>
+        <div class="item" id="translatez">Translatez</div>
+        <div class="item" id="scalex">Scalex</div>
+        <div class="item" id="scaley">Scaley</div>
+        <div class="item" id="scalez">Scalez</div>
+    </div>
+</body>
+
+</html>
